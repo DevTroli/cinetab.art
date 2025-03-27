@@ -1,5 +1,5 @@
 function Home() {
-  return <h1>"A verdadeira sabedoria reside não na força que ostentamos, mas na capacidade de transformar nossa aparente fragilidade em um instrumento de sobrevivência e estratégia" - Rei Salomão</h1>
+  return <h1>"Quem pensa que pode e quem pensa que não pode, ambos estão certos"</h1>
 
 }
 
