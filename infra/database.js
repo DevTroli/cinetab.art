@@ -1,4 +1,4 @@
-import { Client } from "pg";
+import { Client } from 'pg';
 
 async function query(queryObject) {
   const client = new Client({
@@ -10,10 +10,10 @@ async function query(queryObject) {
   });
   await client.connect();
   const result = await client.query(queryObject);
-  await client.end()
+  await client.end();
   return result;
 }
 
 export default {
   query: query,
-}
+};
