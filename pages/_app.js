@@ -1,11 +1,10 @@
-import { Html, Head, Main, NextScript } from 'next/document';
+import Head from 'next/head'
 
-export default function Document() {
+export default function App({ Component, pageProps }) {
   return (
-    <Html lang="pt-BR">
+    <>
       <Head>
         <script src="https://cdn.tailwindcss.com"></script>
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -21,15 +20,8 @@ export default function Document() {
             `,
           }}
         />
-
-        {/* Meta tags básicas para seu projeto */}
-        <meta name="description" content="CineTab - Discussões autênticas sobre cinema" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <body className="bg-zinc-950 text-zinc-100">
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+      <Component {...pageProps} />
+    </>
+  )
 }
