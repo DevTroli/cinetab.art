@@ -127,12 +127,13 @@ function CineTabWIP() {
                 </span>
                 <span
                   className={`
-                  ${phase.status === 'complete'
+                  ${
+                    phase.status === 'complete'
                       ? 'text-green-400'
                       : phase.status === 'current'
                         ? 'text-yellow-400'
                         : 'text-zinc-600'
-                    }
+                  }
                 `}
                 >
                   {phase.status === 'complete'

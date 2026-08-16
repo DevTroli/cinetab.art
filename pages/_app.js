@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -23,5 +23,5 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
     </>
-  )
+  );
 }
